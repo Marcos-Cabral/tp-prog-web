@@ -63,8 +63,8 @@ p{
 .contenedor-de-colores{
 	display: flex;
 	flex-direction: row;
-	height: 47px;
-	margin-bottom: -11px;
+	height: 49px;
+	margin-bottom: 2px;
 }
 .colores-img{
 	display: flex;
@@ -184,6 +184,10 @@ p{
 		left: 39%;
 		margin: -18% 0 0 -27%;
 	}
+	.contenedor-de-colores{
+		margin-bottom: 2px;
+	}
+	
 	.contenedor-de-fuentes{
 		flex-direction: column;
 	}
