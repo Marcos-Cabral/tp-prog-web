@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Learning</title> 
+
+	<!--img de carrito-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<!--img de lupa-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--estilos-->
+  	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+  	<link rel="stylesheet" type="text/css" href="css/gift-card-style.css">
+
+  	<!--Slider jquery-->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  	<!--Js para boton de menu-->
+  	<script src="js/main.js"></script>
+
+</head>
+<body>
+	<!--Barra de header-->
+	<header class="topnav">
+		<h1>SIMPLE LEARNING</h1>
+		  <div class="search-container">
+		    <form>
+		      <input type="text" placeholder="Busca.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+  		</div>
+  		<div id="carrito">
+  			<div>
+				<span id="carro" class="glyphicon glyphicon-shopping-cart"><span id="numero">2</span></span>
+			</div>	
+		</div>
+	</header>
+
+	<!--barra de navegacion-->
+	
+	<nav id="nav-menu" class="menu">
+					<ul>
+						<li><a href="index.html">Index</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="giftcard.html">Gift card</a></li>
+						<li><a href="calendario.html">Calendario</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					    <i class="fa fa-bars"></i>
+					  </a>
+					</ul>
+	</nav>
+	
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("nav-menu");
+	  if (x.className === "menu") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "menu";
+	  }
+	}
+	</script>
+	<main class="main">
+		<section class="giftcard-contenedor">
+
+				<div class="carta">
+					<div class="precio">
+						<span>$0000.-</span>
+					</div>
+					<div class="dato-carta">			
+						<h3>GIFT CARD para</h3>
+						<h2>Destinatario</h2>
+					</div>
+				</div>
+
+				<div class="personalizar">
+					<!--Input del nombre de destinatario-->
+					<h3>Personalización de Giftcard</h3>
+					<input class="nombre-destinatario" type="text" name="nombre" placeholder=" Nombre Destinatario">
+					<br>
+
+					<!--Input de los colores-->
+					<p>Color</p>
+					 <div class="contenedor-de-colores">
+						<div class="colores-img">
+							<img src="img/gift-card/color1.png">
+							<input class="colores" type="radio" name="colores">
+						</div>
+						<div class="colores-img">
+							<img src="img/gift-card/color2.png">
+							<input class="colores" type="radio" name="colores">
+						</div>
+						<div class="colores-img">
+							<img src="img/gift-card/color3.png">
+							<input class="colores" type="radio" name="colores">
+						</div>
+						<div class="colores-img">
+							<img src="img/gift-card/color4.png">
+							<input class="colores" type="radio" name="colores">
+						</div>
+						<div class="colores-img">
+								<img src="img/gift-card/color5.png">
+							<input class="colores" type="radio" name="colores">
+						</div>
+					</div>
+						
+					<br>
+					
+					
+					<!--Input de las fuentes-->
+					<p>Tamaño de fuente</p>
+					 <div class="contenedor-de-fuentes">
+						<div class="fuentes-palabra">
+							<p class="tamanio">20px</p>
+							<input class="fuentes" type="radio" name="fuente1">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">28px</p>
+							<input class="fuentes" type="radio" name="fuente1">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">32px</p>
+							<input class="fuentes" type="radio" name="fuente1">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">48px</p>
+							<input class="fuentes" type="radio" name="fuente1">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">60px</p>
+							<input class="fuentes" type="radio" name="fuente1">
+						</div>
+					</div>
+					
+					<!------------------Monto-->
+					<div class="monto">
+						<label for="monto">Monto $ </label>
+						<input type="text" name="monto">
+					</div>
+					
+					<p>Ubicacion</p>
+					<div class="contenedor-ubicacion">
+						<div class="ubicaciones">
+							<img src="img/gift-card/posicion2.png">
+							<input class="ubicacion" type="radio" name="ubicacion1">
+						</div>
+						<div class="ubicaciones">
+							<img src="img/gift-card/posicion2.png">
+							<input class="ubicacion" type="radio" name="ubicacion1">
+						</div>
+						<div class="ubicaciones">
+							<img src="img/gift-card/posicion2.png">
+							<input class="ubicacion" type="radio" name="ubicacion1">
+						</div>
+					</div>
+					
+					
+					<p>Fondo</p>
+					
+					<div class="contenedor-de-colores">
+						<div class="fondo-img">
+							<img src="img/gift-card/color1.png">
+							<input class="colores" type="radio" name="fondos">
+						</div>
+						<div class="fondo-img">
+							<img src="img/gift-card/color2.png">
+							<input class="colores" type="radio" name="fondos">
+						</div>
+						<div class="fondo-img">
+							<img src="img/gift-card/color3.png">
+							<input class="colores" type="radio" name="fondos">
+						</div>
+						<div class="fondo-img">
+							<img src="img/gift-card/color4.png">
+							<input class="colores" type="radio" name="fondos">
+						</div>
+						<div class="fondo-img">
+								<img src="img/gift-card/color5.png">
+							<input class="colores" type="radio" name="fondos">
+						</div>
+					</div>
+
+					<button class="boton">CONFIRMAR</button>
+
+				</div>
+		</section>
+	</main>
+	<!--Cuerpo de pagina-->	
+
+	<!--Footer-->
+	<footer class="footer">
+		<div class="datos-grupo">
+			<span>Andres Agustin 41263730.</span><br>
+			<span>Marcos Cabral 42684487.</span><br>
+			<span>Federico Rodriguez 41469289.
+			</span>
+		</div>
+		<div class="menu-inferior">
+			<a href="index.html">Inicio</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="giftcard.html">Gift card</a>
+		    <a href="calendario.html">Calendario</a>
+		</div>
+		<div class="redes-sociales">
+			<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+	</footer>
+</body>
+</html>
