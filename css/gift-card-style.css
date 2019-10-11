@@ -140,6 +140,7 @@ p{
 	height: 100%;
 }
 .boton{
+	margin-top: 10px;
 	border:none;
 	background: #0984e3;
 	color: black;
