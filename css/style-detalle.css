@@ -34,7 +34,7 @@ main{
 #imagencurso{
 	margin-top: 30px;
 }
-
+/*---------profesor---------------*/
 #profesor{
 	margin-top: 40px;
 	display: flex;
@@ -165,7 +165,7 @@ main{
 	justify-content: space-around;
 	margin-bottom: 10px;
 }
-
+/*--------------responsive------------*/
 @media screen and(max-width: 867px){
 	#imagencurso{
 		width: 50%;

@@ -9,14 +9,14 @@ body{
 	color: black;
 }
 
-
+/*-------main-----------*/
 main{
 	display: grid;
 	grid-template-areas: "escrito explico"
 						"mapa mapa";
 	grid-gap: 80px;
 }
-
+/*---------------contenedor para dividir en 2 columnas----------------*/
 .escritura{
 	grid-area: escrito;
 	display: flex;
@@ -78,6 +78,7 @@ img{
 .ubicacion img{
 	border: 2px solid black;
 }
+/*---------------responsive--------------*/
 @media only screen and (max-width:620px) {
   main{
      display: grid;

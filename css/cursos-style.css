@@ -1,3 +1,4 @@
+/*-----contenedor curso------*/
 #curso-padre{
   width: 90%;
   padding: 60px 0;
@@ -71,6 +72,7 @@ a:hover{
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+/*-----efectos en cursos ----*/
 .curso1:hover,.curso2:hover, .curso3:hover, .curso4:hover, .curso5:hover, .curso6:hover{
   transform: translateY(-7px);
 }
@@ -104,6 +106,7 @@ a:hover{
   background-color: #303032;
   border-radius: 20px;
 }
+/*----------cursos parte responsive------------------*/
 @media only screen and (max-width: 1000px) {
 
   .cursos{

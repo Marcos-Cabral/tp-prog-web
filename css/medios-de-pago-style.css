@@ -29,6 +29,7 @@
 .tarjetas img{
 	width: 60%;
 }
+/*--------pagos responsive------*/
 @media screen and (max-width: 617px){
 	.medios-de-pago{
 		flex-direction: column;

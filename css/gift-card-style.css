@@ -4,6 +4,7 @@
 	margin-top: 30px;
 	margin-bottom: 60px;
 }
+/*----giftcard--------*/
 .giftcard-contenedor{
 	display: flex;
 	flex-direction: row;
@@ -16,6 +17,7 @@
 	height: 300px;
 	margin:0 auto;
 }
+/*--precio--*/
 .precio{
 	position: absolute;
 	bottom: 93%;
@@ -59,7 +61,7 @@ p{
 	margin-bottom: 5px;
 	font-size: 18px;
 }
-
+/*-----------contenedor de colores y fondos---------------------*/
 .contenedor-de-colores{
 	display: flex;
 	flex-direction: row;
@@ -80,7 +82,7 @@ p{
 	height: 100%;
 	border-radius: 50px;
 }
-
+/*------------contenedor de fuentes-----------*/
 .contenedor-de-fuentes{
 	display: flex;
 	flex-direction: row;
@@ -109,6 +111,7 @@ p{
 	border-radius: 4px;
 	height: 26px;
 }
+/*-------ubicacion-------*/
 .contenedor-ubicacion{
 	display: flex;
 	flex-direction: row;
@@ -150,6 +153,8 @@ p{
 .boton:hover{
 	background: #74b9ff;
 }
+
+/*---------------------Gift card responsive -----------------------------------*/
 @media screen and (max-width: 816px){
 	.giftcard-contenedor{
 		flex-direction: column;
