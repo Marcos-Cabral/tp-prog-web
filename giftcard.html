@@ -16,7 +16,10 @@
   	<link rel="stylesheet" type="text/css" href="css/gift-card-style.css">
 
   	<!--Js para boton de menu-->
-  	<script src="js/main.js"></script>
+  	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+  	<script type="text/javascript" src="js/giftcard.js"></script>
+  	<script type="text/javascript" src="js/carrito.js"></script>
 
 </head>
 <body>
@@ -65,11 +68,11 @@
 			<!--caja donde se mostrara la informacion-->
 				<div class="carta">
 					<div class="precio">
-						<span>$0000.-</span>
+						<span id="precio">$0000.-</span>
 					</div>
 					<div class="dato-carta">			
-						<h3>GIFT CARD para</h3>
-						<h2>Destinatario</h2>
+						<h3 class="destinatario">GIFT CARD para</h3>
+						<h2 class="destinatario" id="destinatario">Destinatario</h2>
 					</div>
 				</div>
 
@@ -84,23 +87,23 @@
 					 <div class="contenedor-de-colores">
 						<div class="colores-img">
 							<img src="img/gift-card/color1.png">
-							<input class="colores" type="radio" name="colores">
+							<input class="colores" type="radio" name="colores" id="celeste">
 						</div>
 						<div class="colores-img">
 							<img src="img/gift-card/color2.png">
-							<input class="colores" type="radio" name="colores">
+							<input class="colores" type="radio" name="colores" id="violeta">
 						</div>
 						<div class="colores-img">
 							<img src="img/gift-card/color3.png">
-							<input class="colores" type="radio" name="colores">
+							<input class="colores" type="radio" name="colores" id="verde">
 						</div>
 						<div class="colores-img">
 							<img src="img/gift-card/color4.png">
-							<input class="colores" type="radio" name="colores">
+							<input class="colores" type="radio" name="colores" id="amarillo">
 						</div>
 						<div class="colores-img">
 								<img src="img/gift-card/color5.png">
-							<input class="colores" type="radio" name="colores">
+							<input class="colores" type="radio" name="colores" id="naranja">
 						</div>
 					</div>
 						
@@ -112,45 +115,45 @@
 					 <div class="contenedor-de-fuentes">
 						<div class="fuentes-palabra">
 							<p class="tamanio">20px</p>
-							<input class="fuentes" type="radio" name="fuente1">
+							<input class="fuentes" type="radio" name="fuente1" id="fuente1">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">22px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente2">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">24px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente3">
 						</div>
 						<div class="fuentes-palabra">
 							<p class="tamanio">28px</p>
-							<input class="fuentes" type="radio" name="fuente1">
+							<input class="fuentes" type="radio" name="fuente1" id="fuente4" >
 						</div>
 						<div class="fuentes-palabra">
-							<p class="tamanio">32px</p>
-							<input class="fuentes" type="radio" name="fuente1">
-						</div>
-						<div class="fuentes-palabra">
-							<p class="tamanio">48px</p>
-							<input class="fuentes" type="radio" name="fuente1">
-						</div>
-						<div class="fuentes-palabra">
-							<p class="tamanio">60px</p>
-							<input class="fuentes" type="radio" name="fuente1">
+							<p class="tamanio">30px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente5">
 						</div>
 					</div>
 					
 					<!------------------Monto-->
 					<div class="monto">
 						<label for="monto">Monto $ </label>
-						<input type="text" name="monto">
+						<input type="text" name="monto" id="monto">
 					</div>
 					<!------------------ubicacion-->
 					<p>Ubicacion</p>
 					<div class="contenedor-ubicacion">
 						<div class="ubicaciones">
 							<img src="img/gift-card/posicion2.png">
-							<input class="ubicacion" type="radio" name="ubicacion1">
+							<input class="ubicacion" type="radio" name="ubicacion1" id="ubicacion1">
 						</div>
 						<div class="ubicaciones">
 							<img src="img/gift-card/posicion1.png">
-							<input class="ubicacion" type="radio" name="ubicacion1">
+							<input class="ubicacion" type="radio" name="ubicacion1" id="ubicacion2">
 						</div>
 						<div class="ubicaciones">
 							<img src="img/gift-card/posicion3.png">
-							<input class="ubicacion" type="radio" name="ubicacion1">
+							<input class="ubicacion" type="radio" name="ubicacion1"id="ubicacion3">
 						</div>
 					</div>
 					
@@ -160,23 +163,23 @@
 					<div class="contenedor-de-colores">
 						<div class="fondo-img">
 							<img src="img/gift-card/color1.png">
-							<input class="colores" type="radio" name="fondos">
+							<input class="colores" type="radio" name="fondos" id="fondo1">
 						</div>
 						<div class="fondo-img">
 							<img src="img/gift-card/color2.png">
-							<input class="colores" type="radio" name="fondos">
+							<input class="colores" type="radio" name="fondos"id="fondo2">
 						</div>
 						<div class="fondo-img">
 							<img src="img/gift-card/color3.png">
-							<input class="colores" type="radio" name="fondos">
+							<input class="colores" type="radio" name="fondos"id="fondo3">
 						</div>
 						<div class="fondo-img">
 							<img src="img/gift-card/color4.png">
-							<input class="colores" type="radio" name="fondos">
+							<input class="colores" type="radio" name="fondos"id="fondo4">
 						</div>
 						<div class="fondo-img">
 								<img src="img/gift-card/color5.png">
-							<input class="colores" type="radio" name="fondos">
+							<input class="colores" type="radio" name="fondos"id="fondo5">
 						</div>
 					</div>
 
