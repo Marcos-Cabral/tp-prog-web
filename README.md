@@ -1,2 +1,2 @@
 # tp-prog-web
-Integrantes: Andres Agustin - Marcos Cabral - Federico Rodriguez
+Frontend de página web hecha para cursos online con carrito.
